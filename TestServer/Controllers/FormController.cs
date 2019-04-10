@@ -14,11 +14,12 @@ namespace TestServer.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<FormModel>> Get()
         {
+
             return null;
         }
 
         [HttpPost]
-        public ActionResult<string> Post(FormModel form)
+        public ActionResult<string> Post([FromBody] FormModel form)
         {
             return "value";
         }
